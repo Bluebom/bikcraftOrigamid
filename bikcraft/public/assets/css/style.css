@@ -1,0 +1,196 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+@import url("../../../node_modules/normalize.css/normalize.css");
+@import url("./reset.css");
+@import url("./grid.css");
+
+/* variáveis css */
+:root {
+  /* cores (fora branco e preto) */
+  --color1: #fec63e;
+  --color2: #292929;
+  /* fonts */
+  --font1: "Inter", sans-serif;
+  --font2: "Source Serif Pro", "Times New Roman", serif;
+}
+
+/* estilos gerais */
+
+* {
+  font-family: var(--font1);
+}
+
+body {
+  height: 100%;
+}
+
+p {
+  font-family: var(--font2);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.btn {
+  border: 0.2rem solid var(--color1);
+  padding: 0.6rem 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color1);
+  letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.85rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.subtitulo:after {
+  content: "";
+  display: block;
+  width: 3.85rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin: 10px auto;
+}
+
+/* header */
+.header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  background-color: var(--color1);
+  padding: 0.9rem 0;
+}
+
+.header_mobile {
+  height: 100%;
+}
+
+.header_menu ul {
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: right;
+}
+
+.header_menu ul a {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.header_menu ul a:hover {
+  color: #fff;
+}
+
+/* introdução */
+.introducao {
+  margin-top: calc(65.7px + 1.8rem);
+  width: 100%;
+  height: 23.75rem;
+  background: url("../img/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.introducao .container {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.introducao h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.quote_externo {
+  max-width: 20rem;
+  color: #fff;
+}
+
+.quote_externo p {
+  font-style: italic;
+}
+
+.quote_externo p:before,
+.quote_externo p:after {
+  content: "";
+  display: block;
+  width: 3.75rem;
+  height: 0.2rem;
+  background-color: #fff;
+  margin: 15px auto;
+}
+
+.quote_externo cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.introducao .btn {
+  margin-top: 10px;
+}
+
+/* produtos */
+.produtos {
+  padding: 3.85rem 0;
+}
+
+.black_bg {
+  width: 100%;
+  height: 12.5rem;
+  background-color: black;
+  position: relative;
+}
+
+.black_bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.yelow_bg {
+  width: 100%;
+  height: 7.5rem;
+  background-color: var(--color1);
+  text-align: center;
+  padding: 0.65rem 1.25rem 1.25rem 1.25rem;
+}
+
+.yelow_bg .subtitulo {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.1rem;
+}
+
+.yelow_bg .subtitulo::after {
+  width: 3.5rem;
+  margin: 0.5rem auto;
+}

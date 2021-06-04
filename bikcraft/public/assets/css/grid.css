@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --defaultWidth: 980px;
+  /* maxCollumns = 16 */
+  --defaultGridColumns: 16;
+}
+
+.container {
+  width: var(--defaultWidth);
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8,
+.grid-9,
+.grid-10,
+.grid-11,
+.grid-12,
+.grid-13,
+.grid-14,
+.grid-15,
+.grid-16,
+.grid-1-3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid-1 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 1 - 20px);
+}
+.grid-2 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 2 - 20px);
+}
+.grid-3 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 3 - 20px);
+}
+.grid-4 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 4 - 20px);
+}
+.grid-5 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 5 - 20px);
+}
+.grid-6 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 6 - 20px);
+}
+.grid-7 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 7 - 20px);
+}
+.grid-8 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 8 - 20px);
+}
+.grid-9 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 9 - 20px);
+}
+.grid-10 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 10 - 20px);
+}
+.grid-11 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 11 - 20px);
+}
+.grid-12 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 12 - 20px);
+}
+.grid-13 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 13 - 20px);
+}
+.grid-14 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 14 - 20px);
+}
+.grid-15 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 15 - 20px);
+}
+.grid-16 {
+  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 16 - 20px);
+}
+.grid-1-3 {
+  width: calc(
+    var(--defaultWidth) * (var(--defaultGridColumns) / 3) /
+      var(--defaultGridColumns) - 20px
+  );
+}
