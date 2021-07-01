@@ -10,6 +10,7 @@
   --defaultWidth: 980px;
   /* maxCollumns = 16 */
   --defaultGridColumns: 16;
+  --spacing: 20px;
 }
 
 .container {
@@ -36,61 +37,92 @@
 .grid-15,
 .grid-16,
 .grid-1-3 {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 .grid-1 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 1 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 1) - var(--spacing)
+  );
 }
 .grid-2 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 2 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 2) - var(--spacing)
+  );
 }
 .grid-3 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 3 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 3) - var(--spacing)
+  );
 }
 .grid-4 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 4 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 4) - var(--spacing)
+  );
 }
 .grid-5 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 5 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 5) - var(--spacing)
+  );
 }
 .grid-6 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 6 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 6) - var(--spacing)
+  );
 }
 .grid-7 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 7 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 7) - var(--spacing)
+  );
 }
 .grid-8 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 8 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 8) - var(--spacing)
+  );
 }
 .grid-9 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 9 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 9) - var(--spacing)
+  );
 }
 .grid-10 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 10 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 10) - var(--spacing)
+  );
 }
 .grid-11 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 11 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 11) - var(--spacing)
+  );
 }
 .grid-12 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 12 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 12) - var(--spacing)
+  );
 }
 .grid-13 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 13 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 13) - var(--spacing)
+  );
 }
 .grid-14 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 14 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 14) - var(--spacing)
+  );
 }
 .grid-15 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 15 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 15) - var(--spacing)
+  );
 }
 .grid-16 {
-  width: calc(var(--defaultWidth) / var(--defaultGridColumns) * 16 - 20px);
+  width: calc(
+    (var(--defaultWidth) / var(--defaultGridColumns) * 16) - var(--spacing)
+  );
 }
 .grid-1-3 {
   width: calc(
-    var(--defaultWidth) * (var(--defaultGridColumns) / 3) /
-      var(--defaultGridColumns) - 20px
+    (var(--defaultWidth) * (var(--defaultGridColumns) / 3)) /
+      var(--defaultGridColumns) - var(--spacing)
   );
 }

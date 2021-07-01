@@ -13,7 +13,6 @@
   --font1: "Inter", sans-serif;
   --font2: "Source Serif Pro", "Times New Roman", serif;
 }
-
 /* estilos gerais */
 
 * {
@@ -28,6 +27,10 @@ p {
   font-family: var(--font2);
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+img {
+  display: block;
 }
 
 .btn {
@@ -102,7 +105,7 @@ p {
 
 /* introdução */
 .introducao {
-  margin-top: calc(65.7px + 1.8rem);
+  margin-top: calc(61.7px + 1.8rem);
   width: 100%;
   height: 23.75rem;
   background: url("../img/hero-bg.jpg") no-repeat center;
@@ -183,14 +186,123 @@ p {
   padding: 0.65rem 1.25rem 1.25rem 1.25rem;
 }
 
-.yelow_bg .subtitulo {
+.yelow_bg .subtitulo,
+.qualidade .q-lista.container li .subtitulo {
   font-size: 1.125rem;
   line-height: 1.5625rem;
   margin-bottom: 15px;
   letter-spacing: 0.1rem;
 }
 
-.yelow_bg .subtitulo::after {
+.yelow_bg .subtitulo::after,
+.qualidade .q-lista.container li .subtitulo::after {
+  height: 0.15rem;
   width: 3.5rem;
   margin: 0.5rem auto;
+}
+
+.cal_to_action {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.cal_to_action p {
+  margin-bottom: 30px;
+}
+
+.cal_to_action .btn:hover {
+  color: #000;
+  border-color: #000;
+}
+
+/* portfólio */
+.portfolio {
+  width: 100%;
+  height: auto;
+  background: #000;
+  padding: 40px 0;
+}
+
+.portfolio .subtitulo {
+  color: var(--color1);
+}
+
+.portfolio .subtitulo::after {
+  background-color: var(--color1);
+}
+
+.portfolio .container .retro {
+  height: 18rem;
+  background-image: url("../img/retro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio .container .passeio {
+  height: 18rem;
+  background-image: url("../img/passeio.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio .container .esporte {
+  margin: 20px;
+  height: 18rem;
+  background-image: url("../img/retro02.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.portfolio .cal_to_action {
+  padding-top: 0;
+  margin-top: 25px;
+}
+
+.portfolio .cal_to_action p {
+  color: white;
+}
+
+.portfolio .cal_to_action .btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Qualidades */
+
+.qualidade {
+  padding: 60px 0;
+  position: relative;
+}
+
+.qualidade::after {
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/marca_linkslinhas.svg") no-repeat center;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.qualidade .container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.qualidade .q-lista.container {
+  padding: 0 35px;
+  margin-top: 40px;
+  flex-direction: row;
+}
+
+.qualidade .q-lista.container li {
+  text-align: center;
+  padding: 0 2.5rem;
+}
+
+.qualidade .q-lista.container li .subtitulo::after {
+  margin: 0.55rem auto;
 }
